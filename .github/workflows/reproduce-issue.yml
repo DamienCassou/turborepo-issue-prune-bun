@@ -23,5 +23,9 @@ jobs:
       - name: Bun install
         run: bun install --frozen-lockfile
 
+      - name: Show turbo version
+        run: bunx --package=turbo@${{matrix.turboversion}} -- turbo --version
+
+
       - name: Reproduce issue
         run: rm -rf out && bunx --package=turbo@${{matrix.turboversion}} -- turbo prune --docker a && bun install --cwd=out/json --frozen-lockfile

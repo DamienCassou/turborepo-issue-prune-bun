@@ -19,4 +19,4 @@ jobs:
         run: bun install --frozen-lockfile
 
       - name: Reproduce issue
-        run: rm -rf out && bunx --package=turbo@canary -- turbo prune --docker a && bun install --silent --cwd=out/json --frozen-lockfile
+        run: rm -rf out && bunx --package=turbo@canary -- turbo prune --docker a && bun install --cwd=out/json --frozen-lockfile

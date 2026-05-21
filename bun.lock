@@ -32,8 +32,8 @@
 
     "b": ["b@workspace:packages/b"],
 
-    "is-number": ["is-number@7.0.0", "https://artifactory.wolterskluwer.io:443/artifactory/api/npm/group-npm/is-number/-/is-number-7.0.0.tgz", {}, "sha512-41Cifkg6e8TylSpdtTpeLVMqvSBEVzTttHvERD741+pnZ8ANv0004MRL43QKPDlK9cGvNp6NZWZUBlbGXYxxng=="],
+    "is-number": ["is-number@7.0.0", "https://registry.npmjs.org/is-number/-/is-number-7.0.0.tgz", {}, "sha512-41Cifkg6e8TylSpdtTpeLVMqvSBEVzTttHvERD741+pnZ8ANv0004MRL43QKPDlK9cGvNp6NZWZUBlbGXYxxng=="],
 
-    "b/is-number": ["is-number@6.0.0", "https://artifactory.wolterskluwer.io:443/artifactory/api/npm/group-npm/is-number/-/is-number-6.0.0.tgz", {}, "sha512-Wu1VHeILBK8KAWJUAiSZQX94GmOE45Rg6/538fKwiloUu21KncEkYGPqob2oSZ5mUT73vLGrHQjKw3KMPwfDzg=="],
+    "b/is-number": ["is-number@6.0.0", "https://registry.npmjs.org/is-number/-/is-number-6.0.0.tgz", {}, "sha512-Wu1VHeILBK8KAWJUAiSZQX94GmOE45Rg6/538fKwiloUu21KncEkYGPqob2oSZ5mUT73vLGrHQjKw3KMPwfDzg=="],
   }
 }

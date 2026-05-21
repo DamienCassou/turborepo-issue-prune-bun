@@ -1,0 +1,22 @@
+name: Reproduce issue
+
+on:
+  pull_request:
+
+jobs:
+  job:
+    name: Reproduce issue
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 1
+
+      - uses: oven-sh/setup-bun@v2
+
+      - name: Bun install
+        run: bun install --frozen-lockfile
+
+      - name: Reproduce issue
+        run: rm -rf out && bunx --package=turbo@canary -- turbo prune --docker a && bun install --silent --cwd=out/json --frozen-lockfile
